@@ -1,5 +1,14 @@
 This page is intended for Tutorial participants who would like to setup an own environment with Radical-Pilot, SAGA-Hadoop and the Hadoop/Spark tools.
 
+# Systools
+
+Make sure all hosts are reachable via dns name and firewall off
+
+Install NTP:
+        
+        for i in `cat hosts`; do ssh $i sudo yum install -y ntpdate; done
+        for i in `cat hosts`; do ssh $i sudo service ntpdate start; done
+
 # Anaconda (with Python2)
 
 * https://www.continuum.io/downloads
