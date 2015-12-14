@@ -45,7 +45,7 @@ sudo yum -y install ambari-server
 #login at <public-dns>:8080 
 
 # wget http://ipinfo.io/ip -qO -    # public ip
-
+#
 ### 
 ### Firewall
 #http://www.liquidweb.com/kb/how-to-start-and-enable-firewalld-on-centos-7/
