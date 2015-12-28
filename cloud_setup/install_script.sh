@@ -30,14 +30,14 @@ sudo mv ipv6_permissions /etc/sysctl.d/99-hadoop-ipv6.conf
 sudo sysctl -e -p /etc/sysctl.d/99-hadoop-ipv6.conf
 
 ##################### LOGIN TO ambari-sever node ############
-ssh <ambari-server>  # this is the hostname of the ambari-sever node
+#ssh <ambari-server>  # this is the hostname of the ambari-sever node
 
-sudo yum -y install  wget 
-sudo yum -y install yum-utils createrepo
-cd /etc/yum.repos.d/
-sudo wget http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.1.2.1/ambari.repo # ambari repo
-sudo yum -y install ambari-server
-
+#sudo yum -y install  wget 
+#sudo yum -y install yum-utils createrepo
+#cd /etc/yum.repos.d/
+#sudo wget http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.1.2.1/ambari.repo # ambari repo
+#sudo yum -y install ambari-server
+#############################################
 
 ####ambari-server node: ####
 #sudo ambari-server setup
