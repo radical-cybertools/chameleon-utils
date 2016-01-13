@@ -4,7 +4,7 @@ Put all the hosts along with the hostnames in /etc/hosts file
 cp /etc/hosts ~/host_file
 for i in `cat hosts`; do scp host_file $i:host_file; done
 for i in `cat hosts`; do scp ~/.ssh/id_rsa  $i:~/.ssh/id_rsa; done
-curl install_script.sh
+curl https://raw.githubusercontent.com/radical-cybertools/chameleon-utils/master/cloud_setup/install_script.sh > install_script.sh
 Edit line 33 with the hostname of ambari-server
 for i in `cat hosts`; do ssh $i "bash -s" <./install_script.sh; done
 ssh to <ambari-server> node
